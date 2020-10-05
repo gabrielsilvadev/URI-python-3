@@ -16,7 +16,8 @@ def soma(piscada,s):
 def main():
     for i in range(3):
         s = 0
-        while True:
+        contro=True
+        while contro:
             piscada = input()
             if piscada != 'caw caw':
                 piscada = piscada_bin(piscada)
@@ -24,7 +25,7 @@ def main():
                 s = soma(piscada,s)
             else:
                 print(s)
-                break
+                contro=False
 
 main()
     
